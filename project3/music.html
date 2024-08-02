@@ -6,7 +6,7 @@
     <title>Saba - Music</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="music">
     <nav class="site-nav">
 		<ul>
 			<li class="nav-item"><a href="index.html">Homepage</a></li>
@@ -14,5 +14,113 @@
 			<li class="nav-item"><a href="news.html">News</a></li>
 		</ul>
 	</nav>
+
+	<div class="container music">
+		<h1>Saba's Albums</h1>
+		<div class="albums">
+			<div class="album">
+				<img src="imgs/Saba-Few-Good-Things.webp" alt="">
+				<p>Few Good Things</p>
+				<p>Release Date: February 4, 2022</p>
+				<button class="album-btn" onclick="showHideFGT()">Show Song List</button>
+				<div id="fgt-songs">
+					<div class="songs">
+						<div class="song">Free Samples</div>
+						<div class="song">One Way or Every N***a With a Budget</div>
+						<div class="song">Survivor's Guilt</div>
+						<div class="song">an Interlude Called "Circus"</div>
+						<div class="song">Fearmonger</div>
+						<div class="song">Come My Way</div>
+						<div class="song">Still</div>
+					</div>
+					<div class="songs">
+						<div class="song">a Simpler Time</div>
+						<div class="song">Soldier</div>
+						<div class="song">If I had a Dollar</div>
+						<div class="song">Stop That</div>
+						<div class="song">Make Believe</div>
+						<div class="song">2012</div>
+						<div class="song">Few Good Things</div>
+					</div>
+				</div>
+			</div>
+			<div class="album">
+				<img src="imgs/Saba-Care-for-Me.webp" alt="">
+				<p>Care For Me</p>
+				<p>Release Date: April 5, 2018</p>
+				<button class="album-btn" onclick="showHideCFM()">Show Song List</button>
+				<div id="cfm-songs">
+					<div class="songs">
+						<div class="song">BUSY/SIRENS</div>
+						<div class="song">BROKEN GIRLS</div>
+						<div class="song">LIFE</div>
+						<div class="song">CALLIGRAPHY</div>
+						<div class="song">FIGHTER</div>
+					</div>
+					<div class="songs">
+						<div class="song">SMILE</div>
+						<div class="song">LOGOUT</div>
+						<div class="song">GREY</div>
+						<div class="song">PROM/KING</div>
+						<div class="song">HEAVEN ALL AROUND ME</div>
+					</div>
+				</div>
+			</div>				
+			<div class="album">
+				<img src="imgs/Saba-Bucket-List-Project.webp" alt="">
+				<p>Bucket List Project</p>
+				<p>Release Date: October 27, 2016</p>
+				<button class="album-btn" onclick="showHideBLP()">Show Song List</button>
+				<div id="blp-songs">
+					<div class="songs">
+						<div class="song">In Loving Memory</div>
+						<div class="song">Stoney</div>
+						<div class="song">GPS</div>
+						<div class="song">Church/Liquor Store</div>
+						<div class="song">Westside Bound 3</div>
+						<div class="song">MOST</div>
+						<div class="song">Symmetry</div>
+					</div>
+					<div class="songs">
+						<div class="song">Photosynthesis</div>
+						<div class="song">The Billy Williams Story</div>
+						<div class="song">Bucket List</div>
+						<div class="song">American Hypnosis</div>
+						<div class="song">California</div>
+						<div class="song">World In My Hands</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+	function showHideFGT() {
+		var songs = document.getElementById("fgt-songs");
+		if (songs.style.display === "none") {
+			songs.style.display = "flex";
+		} else {
+			songs.style.display = "none";
+		}
+	}
+
+	function showHideCFM() {
+		var songs = document.getElementById("cfm-songs");
+		if (songs.style.display === "none") {
+			songs.style.display = "flex";
+		} else {
+			songs.style.display = "none";
+		}
+	}
+
+	function showHideBLP() {
+		var songs = document.getElementById("blp-songs");
+		if (songs.style.display === "none") {
+			songs.style.display = "flex";
+		} else {
+			songs.style.display = "none";
+		}
+	}
+</script>
 </body>
 </html>

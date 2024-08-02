@@ -3,6 +3,7 @@ html {
     font-size: 24px;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +20,12 @@ header {
 .container {
     padding: 0;
     margin: 0;
+    background-color: rgb(219, 187, 166);
+    z-index: 100;    
+}
+
+.music {
+    background-color: white;
 }
 
 #scroll-nav {
@@ -43,6 +50,7 @@ header {
     background: linear-gradient(0deg, rgb(219, 187, 166) 0%, rgba(255, 255, 255, 0) 100%);
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .overlay-text {
@@ -54,6 +62,10 @@ header {
     color: black;
     margin: 0;
     padding: 0;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
 
 .overlay-header {
@@ -63,6 +75,7 @@ header {
     margin: 0;
     padding: 0;
     text-align: center;
+    z-index: 10;
 }
 
 .overlay-nav {
@@ -106,11 +119,27 @@ header {
     padding: 0;
 }
 
+.btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    animation: scrollArrowFade ease, scrollArrowMove ease;
+    animation-duration: 1s, 1s;
+}
+
+.btn:hover {
+    filter: opacity(50%);
+}
+
 .scroll-arrow {
     max-width: 5vw;
     display: block;
     margin: auto;
-    padding-top: 100px;
+    top: 0;
+
 }
 
 
@@ -119,6 +148,100 @@ h1 {
     font-size: 3rem;
 }
 
+.albums {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.album {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    width: 350px;
+}
+
+.songs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 600px;
+}
+
+.song {
+    padding: 10px 5px;
+    flex-grow: 1;
+    font-size: .8rem;
+    width: 100%;
+    text-align: center;
+}
+
+#fgt-songs {
+    display: none;
+}
+
+#cfm-songs {
+    display: none;
+}
+
+#blp-songs {
+    display: none;
+}
+
+.album-btn {
+    background-color: #dbbba6;
+    color: white;
+    font: inherit;
+    border: none;
+    border-radius: 20px 20px;
+    width: 100%;
+    padding: 15px;
+}
+
 footer {
     text-align: center;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        bottom: 0%;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 10%;
+    }
+}
+
+@keyframes scrollArrowFade {
+    0% {
+        opacity: 0;
+        top: 0px;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes scrollArrowMove {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 25px;
+    }
+    
+    100% {
+        top: 0px;
+    }
 }
