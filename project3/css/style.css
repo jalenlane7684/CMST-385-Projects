@@ -17,6 +17,7 @@ header {
     position: relative;
 }
 
+
 .container {
     padding: 0;
     margin: 0;
@@ -144,9 +145,13 @@ header {
 
 
 h1 {
-    text-align: center;
     font-size: 3rem;
 }
+
+h1, h2 {
+    text-align: center;
+}
+
 
 .albums {
     width: 100%;
@@ -199,6 +204,22 @@ h1 {
     border-radius: 20px 20px;
     width: 100%;
     padding: 15px;
+}
+
+.news-p {
+    text-indent: 50px;
+    padding: 50px 30vw;
+}
+
+#headrap {
+    display: block;
+    align-content: center;
+    margin: auto;
+    padding: 0 10vw;
+}
+
+.news-divider {
+    width: 50%;
 }
 
 footer {
