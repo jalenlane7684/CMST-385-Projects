@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Oswald', 'Sans-serif';
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #212121;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+figcaption {
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h1, h2 {
+    text-align: center;
+    color: black;
+    padding-bottom: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 150px;
+}
+
+.container {
+    padding: 5vh 5vw;
+    margin: 5vh 5vw;
+    margin-top: 0;
+    background-color: rgb(235, 235, 235);
+    min-height: 80vh;
+}
+
+.site-nav {
+    background-color: #446cfc;
+    padding: 5px 0;
+    padding-left: 20px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.site-nav > ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: left;
+    width: 30%;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.site-nav > ul > li {
+    text-decoration: none;
+}
+
+ul > li {
+    padding-left: 30px;
+}
+
+.resume-list > li {
+    padding-bottom: 5px;
+}
+
+.resume-section, #resume-info {
+    padding-bottom: 20px;
+}
+
+.about-header {
+    text-align: center;
+}
+
+.project-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-box {
+    margin: 0 5%;
+    padding: 20px;
+    border: solid white;
+    border-radius: 25px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+}
+a > figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+.post-paragraph {
+    text-indent: 10px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.date-pub-edit {
+    text-align: center;
+    font-size: .8rem;
+}
+
+.resume-header {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.resume-container {
+    width: 70%;
+    margin: auto;
+}
