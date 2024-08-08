@@ -127,11 +127,12 @@ ul > li {
     width: 300px;
     height: 300px;
     background-color: white;
+    flex: 1;
 }
 
 .project-box:hover {
     animation: grow .1s ease-in-out;
-    scale: 1.1;
+    flex: 1.1;
 }
 
 a > figure{
@@ -244,11 +245,11 @@ header {
 
 @keyframes grow {
     0% {
-        scale: 1;
+        flex: 1;
     }
 
     100% {
-        scale: 1.1;
+        flex: 1.1;
     }
 }
 
@@ -334,7 +335,6 @@ header {
     
     .project-box:hover {
         animation: none;
-        scale: initial;
     }
 
     .posts {
