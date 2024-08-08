@@ -20,6 +20,7 @@ body {
 
 figcaption {
     padding-bottom: 20px;
+    text-align: center;
 }
 
 a {
@@ -180,7 +181,6 @@ a > figure{
     flex-direction: column;
 }
 
-
 .intro-img {
     width: 50vw;
     aspect-ratio: 3/2;
@@ -196,6 +196,7 @@ a > figure{
 
 .project-img {
     width: 150px;
+    
 }
 
 .center-all {
@@ -204,6 +205,12 @@ a > figure{
 
 .big-paragraph {
     font-size: 2rem;
+}
+
+.blue-hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .blue-hover:hover {
@@ -245,7 +252,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-aspect-ratio: 3/2) {
     .site-nav {
         padding-left: 0;
     }
@@ -266,9 +273,13 @@ header {
     h3 {
         font-size: 1rem;
     }
+
+    .project-box {
+        height: 350px;
+    }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-aspect-ratio: 1/1) {
     
     html {
         font-family: 'Oswald', 'Sans-serif';
@@ -276,6 +287,10 @@ header {
         padding: 0;
         margin: 0;
         scroll-behavior: smooth;
+    }
+
+    .site-nav {
+        position: relative;
     }
 
     .site-nav > ul {
@@ -289,7 +304,7 @@ header {
     ul > li {
         padding-left: 0;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .project-grid {
